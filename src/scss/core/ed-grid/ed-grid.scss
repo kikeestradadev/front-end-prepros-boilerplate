@@ -46,10 +46,10 @@ $sizes: map-keys($breakpoints);
 @import 'ed-grid/components/video';
 
 // Not recomended (legacy)
-@import 'ed-grid/legacy/ed-menu';
-@import 'ed-grid/legacy/offset';
-@import 'ed-grid/legacy/grid';
-@import 'ed-grid/legacy/legacy';
+// @import 'ed-grid/legacy/ed-menu';
+// @import 'ed-grid/legacy/offset';
+// @import 'ed-grid/legacy/grid';
+// @import 'ed-grid/legacy/legacy';
 
 // CSS Variables
 :root {
