@@ -1,22 +1,6 @@
 /*here start de website template core*/
 @import "./core/normalize.scss";
-$fractions : 1,2,3,4,5,6,7,8,9,10; 
-$dev              : true;
-$dev-hover        : false;
-$max-width        : 1440px; 
-$breakpoints 		:
-	(
-		s		: 0, 
-		sm		: 480px, 
-		m		: 640px,
-		l		: 1024px,
-		lg		: 960px,
-		xl		: 1280px,
-		xxl		: 1600px, 
-		xxxl	: 1920px,
-		xxxxl	: 2240px
-	);
-@import "./core/ed-grid/ed-grid.scss"; 
+@import "./core/ed-grid.scss"; 
 @import "./layout/layout.scss";
 @import "./layout/fonts.scss";
 @import "./core-modules/core-modules"; 
