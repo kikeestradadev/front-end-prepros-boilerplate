@@ -2,7 +2,7 @@
 $prototype        : true !default;
 $dev              : true !default;
 $dev-hover        : false !default;
-$max-width        : 1440px !default;
+$max-width        : 1200px !default;
 $l-unit           : .5rem !default;
 $gap              : $l-unit * 4 !default;  // 2rem
 $fractions        : 1,2,3,4,5,6,7,8,9,10 !default;
@@ -21,13 +21,13 @@ $breakpoints : (
 	lg		: 1280px,
 	xl		: 1600px,
 	xxl		: 1800px, 
-	xxxl	: 1920px,
+	xxxl	: 1920px
 ) !default;
 
 $sizes: map-keys($breakpoints);
 
 // Importa archivos de configuración
-@import 'ed-grid/helpers/mixins';
+@import 'ed-grid/helpers/mixins'; 
 @import 'ed-grid/helpers/functions';
 
 // Importar componentes
@@ -44,6 +44,12 @@ $sizes: map-keys($breakpoints);
 @import 'ed-grid/components/visibility';
 @import 'ed-grid/components/prototype';
 @import 'ed-grid/components/video';
+
+// Not recomended (legacy)
+@import 'ed-grid/legacy/ed-menu';
+@import 'ed-grid/legacy/offset';
+@import 'ed-grid/legacy/grid';
+@import 'ed-grid/legacy/legacy';
 
 // CSS Variables
 :root {
