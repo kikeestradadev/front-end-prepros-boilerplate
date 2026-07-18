@@ -1,16 +1,7 @@
 /*here start de website template core*/
-@import "./core/normalize.scss";
-@import "./core/ed-grid.scss"; 
-@import "./layout/layout.scss";
-@import "./layout/fonts.scss";
-@import "./core-modules/core-modules"; 
-/*here finish de website template core*/
-
-/*here start de website internal components modules*/
-@import "./internal-modules/internal-modules";
-/*here finish de website internal components modules*/ 
-
-/*here start the hacks section*/
-@import "./hacks/hacks";
-/*here finish the hacks section*/
+@import "./core/normalize";
+@import "./core/layout";
+@import "./core/fonts";
+@import "./modules/modules"; 
+@import "./core/hacks";
 

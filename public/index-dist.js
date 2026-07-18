@@ -80,12 +80,7 @@ __webpack_require__.r(__webpack_exports__);
   (0,_core_modules_coreModule__WEBPACK_IMPORTED_MODULE_0__["default"])();
   /*here finish core layout ui scripts functions*/
 })();
-
-(function () {
-  /*here start internal layout ui components scripts functions*/
-  (0,_internal_modules_internalModule__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  /*here start internal layout ui components scripts functions*/
-})();
+(function () {})();
 }();
 /******/ })()
 ;
