@@ -1,17 +1,9 @@
-/*here start core layout ui scripts imports*/
-import coreModule from './core-modules/coreModule';
-/*here finish core layout ui scripts imports*/
+import coreModule from './modules/coreModule';
+import internalModule from './modules/internalModule';
 
-/*here start internal layout ui components scripts imports*/
-import internalModule from './internal-modules/internalModule';
-/*here finish internal layout ui components scripts imports*/
+const initComponents = () => {
+	coreModule();
+	internalModule();
+};
 
-(() => {
-	/*here start core layout ui scripts functions*/
-    coreModule();
-	/*here finish core layout ui scripts functions*/
-})();
-
-(() => {
-	
-})();
+document.addEventListener('DOMContentLoaded', initComponents);

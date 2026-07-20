@@ -83,4 +83,4 @@ document.addEventListener('DOMContentLoaded', initComponents);
 }();
 /******/ })()
 ;
-//# sourceMappingURL=index-dist.js.map
+//# sourceMappingURL=index.js.map

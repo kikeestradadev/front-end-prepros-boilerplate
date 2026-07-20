@@ -1,24 +1,13 @@
--
-	const typography = {
-		family: 'Inter',
-		fallback: 'system-ui, sans-serif',
-		source: 'Google Fonts / local',
-		weights: [
-			{ name: 'Regular', value: 400 },
-			{ name: 'Medium', value: 500 },
-			{ name: 'Semibold', value: 600 },
-			{ name: 'Bold', value: 700 },
-		],
-	}
+include ../data/typography-module-data
 
 section(class='typography-module')
 	div(class='typography-module__container')
-		h2(class='typography-module__title') Tipografia
-		p(class='typography-module__lead') Familia tipografica principal del proyecto.
+		h2(class='typography-module__title')= typographyModuleData.title
+		p(class='typography-module__lead')= typographyModuleData.lead
 
 		article(class='typography-module__specimen')
-			p(class='typography-module__family-name')= typography.family
-			p(class='typography-module__meta') Stack: #{typography.family}, #{typography.fallback}
+			p(class='typography-module__family-name')= typographyModuleData.family
+			p(class='typography-module__meta') Stack: #{typographyModuleData.family}, #{typographyModuleData.fallback}
 			p(class='typography-module__alphabet')
 				| ABCDEFGHIJKLMNOPQRSTUVWXYZ
 				br
@@ -28,7 +17,7 @@ section(class='typography-module')
 			p(class='typography-module__pangram') El veloz murcielago hindu comia feliz cardillo y kiwi.
 
 		div(class='typography-module__weights')
-			each weight in typography.weights
+			each weight in typographyModuleData.weights
 				p(class='typography-module__weight' style=`font-weight: ${weight.value}`)
 					span(class='typography-module__weight-label') #{weight.name} (#{weight.value})
 					span(class='typography-module__weight-sample') The quick brown fox jumps over the lazy dog.
