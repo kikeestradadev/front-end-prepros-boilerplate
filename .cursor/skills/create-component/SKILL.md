@@ -7,10 +7,10 @@ description: Crea componentes simétricos Pug, SCSS y JavaScript con BEM para el
 
 ## Convención
 
-Usa el mismo nombre base en las capas necesarias:
+Usa el mismo nombre base en las capas necesarias. Los módulos Pug viven en `src/pug/modules/` para mantener coherencia con SCSS y JS:
 
 ```text
-src/pug/components/main-menu.pug
+src/pug/modules/main-menu.pug
 src/pug/data/main-menu-data.pug
 src/scss/modules/_main-menu.scss
 src/js/modules/mainMenu.js
@@ -18,9 +18,11 @@ src/js/modules/mainMenu.js
 
 El bloque BEM es `.main-menu`.
 
+Los specimens del style guide (paleta, tipografía demo, etc.) y la página `style-guide.pug` viven en `src/pug/style-guide/`, no en `modules/` ni en `pages/`.
+
 ## Flujo
 
-1. Crea el Pug con sintaxis larga:
+1. Crea el Pug en `src/pug/modules/` con sintaxis larga:
 
 ```pug
 nav(class='main-menu')
@@ -59,7 +61,7 @@ export default mainMenu;
 
 5. Si tiene contenido estructurado, crea `src/pug/data/{name}-data.pug`, inclúyelo con `include ../data/{name}-data` y recórrelo con `each`.
 6. Impórtalo en `src/js/index.js` y ejecútalo dentro de `initComponents`.
-7. Incluye el Pug desde la página correspondiente.
+7. Incluye el Pug desde la página correspondiente con `include ../modules/{name}`.
 8. Documenta en `README.md` cualquier asset o CDN nuevo.
 
 ## Restricciones
@@ -70,3 +72,4 @@ export default mainMenu;
 - Los módulos interactivos deben ser idempotentes y soportar múltiples raíces.
 - Valida dependencias CDN antes de utilizarlas.
 - Prepros solo compila los cuatro entrypoints definidos en `prepros.config`.
+- No coloques módulos UI en `src/pug/style-guide/`; esa carpeta es solo para demos del style guide.

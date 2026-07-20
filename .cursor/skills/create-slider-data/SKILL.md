@@ -8,13 +8,13 @@ description: Crea y modifica sliders Pug separando todo su contenido en un archi
 Cada slider requiere dos archivos simétricos:
 
 ```text
-src/pug/components/allies-slider.pug
+src/pug/modules/allies-slider.pug
 src/pug/data/allies-slider-data.pug
 ```
 
 ## Convención obligatoria
 
-Para `{name}-slider.pug`, crea siempre `{name}-slider-data.pug`.
+Para `{name}-slider.pug` en `src/pug/modules/`, crea siempre `{name}-slider-data.pug` en `src/pug/data/`.
 
 El componente incluye los datos al inicio:
 
@@ -49,4 +49,4 @@ each ally in alliesSliderData.items
 3. Mantén SVG estructural y controles de Swiper en el componente.
 4. Usa sintaxis Pug larga y clases BEM.
 5. Conserva el HTML y las clases que espera el módulo JavaScript del slider.
-6. Compila `index.pug` y `style-guide.pug` después de cualquier cambio.
+6. Compila `src/pug/pages/index.pug` y `src/pug/style-guide/style-guide.pug` después de cualquier cambio.

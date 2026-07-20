@@ -1,6 +1,6 @@
 ---
 description: Naming obligatorio para componentes Pug, SCSS y JS con el mismo nombre base
-globs: src/pug/components/**/*.pug,src/scss/modules/**/*.scss,src/js/modules/**/*.js
+globs: src/pug/modules/**/*.pug,src/scss/modules/**/*.scss,src/js/modules/**/*.js
 alwaysApply: false
 ---
 
@@ -14,10 +14,12 @@ _main-menu.scss
 mainMenu.js
 ```
 
-- Pug: `src/pug/components/kebab-case.pug`
+- Pug: `src/pug/modules/kebab-case.pug`
 - SCSS: `src/scss/modules/_kebab-case.scss`
 - JS opcional: `src/js/modules/camelCase.js`
 - Bloque BEM: `.kebab-case`
+
+Los specimens del style guide y su página viven en `src/pug/style-guide/`, separados de los módulos UI.
 
 ## Registro
 
